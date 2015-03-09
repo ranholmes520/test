@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee" >
+
+    <RelativeLayout
+        android:id="@+id/fragment_1_home_relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#242938"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="我不是支付宝"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_1_home_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/fragment_1_home_relativeLayout"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/fragment_1_home_swept_code"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:background="@drawable/preference_code"
+            android:clickable="true" >
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="75dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/image_swept_code" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_1_home_get_code"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:background="@drawable/preference_code"
+            android:clickable="true" >
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="75dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/image_get_code" />
+        </RelativeLayout>
+    </LinearLayout>
+	
+    <RelativeLayout 
+        android:id="@+id/fragment_1_home_relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/preference_show"
+        android:layout_below="@id/fragment_1_home_linearlayout">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_centerInParent="true"
+            android:textColor="#98a0af"
+            android:text="您可以使用以下业务"/>
+        
+    </RelativeLayout>
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_1_home_relativeLayout2" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/fragment_1_home_trans"
+                    android:layout_width="90dp"
+                    android:layout_height="110dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/preference_show"
+                    android:clickable="true" >
+                    
+                    <LinearLayout 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+                        
+                        <ImageView 
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/image_trans"/>
+                        <TextView 
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:textColor="#98a0af"
+                            android:text="转账"/>
+                        
+                    </LinearLayout>
+                    
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/fragment_1_home_record"
+                    android:layout_width="90dp"
+                    android:layout_height="110dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/preference_show"
+                    android:clickable="true" >
+                    
+                    <LinearLayout 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+                        
+                        <ImageView 
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/image_record"/>
+                        <TextView 
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:textColor="#98a0af"
+                            android:text="交易记录"/>
+                        
+                    </LinearLayout>
+                    
+                    
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/fragment_1_home_donate"
+                    android:layout_width="90dp"
+                    android:layout_height="110dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/preference_show"
+                    android:clickable="true" >
+                    
+                    <LinearLayout 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+                        
+                        <ImageView 
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/image_donate"/>
+                        <TextView 
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:textColor="#98a0af"
+                            android:text="爱心捐款"/>
+                        
+                    </LinearLayout>
+                    
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/fragment_1_home_balance"
+                    android:layout_width="90dp"
+                    android:layout_height="110dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/preference_show"
+                    android:clickable="true" >
+                    
+                    <LinearLayout 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+                        
+                        <ImageView 
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/image_balance"/>
+                        <TextView 
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:textColor="#98a0af"
+                            android:text="余额查询"/>
+                        
+                    </LinearLayout>
+                    
+                    
+                </RelativeLayout>
+            </LinearLayout>
+            
+			<FrameLayout
+                android:id="@+id/framelayout"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="140dip" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:clickable="true" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_gravity="bottom"
+                    android:background="#33000000"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="中国家庭院校园区域名字体现"
+                        android:textColor="#ffffff" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dip"
+                        android:gravity="center" >
+
+                        <View
+                            android:id="@+id/v_dot0"
+                            style="@style/dot_style"
+                            android:background="@drawable/dot_focused" />
+
+                        <View
+                            android:id="@+id/v_dot1"
+                            style="@style/dot_style" />
+
+                        <View
+                            android:id="@+id/v_dot2"
+                            style="@style/dot_style" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>            
+            
+            
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

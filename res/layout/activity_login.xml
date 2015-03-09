@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	<LinearLayout
+	    android:id="@+id/activity_login_part"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/login_account_id"
+            android:layout_width="300dp"
+            android:layout_marginTop="25dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/login_selector"
+            android:hint="账号"/>
+
+        <EditText
+            android:id="@+id/login_account_pwd"
+            android:layout_width="300dp"
+            android:layout_marginTop="25dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:hint="密码(6位密码)"
+            android:password="true"
+            android:background="@drawable/login_selector" />
+    </LinearLayout>
+	<Button 
+	    android:id="@+id/login_login_btn"
+	    android:layout_width="300dp"
+	    android:layout_height="35dp"
+	    android:layout_centerHorizontal="true"
+	    android:text="登录"
+	    android:textColor="#fff"
+	    android:textSize="21sp"
+	    android:layout_marginTop="20dp"
+	    android:layout_below="@id/activity_login_part"
+	    android:background="@drawable/btn_style_blue"/>
+	<com.ranholmes.view.IndeterminateProgressBar 
+	    android:id="@+id/login_pb"
+	    android:layout_width="35dp"
+	    android:layout_height="35dp"
+	    android:layout_centerHorizontal="true"
+	    android:background="@android:color/white"
+	    android:layout_alignBottom="@id/login_login_btn"/>
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ranholmes.aemanager"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.VIBRATE" /> 
+	<uses-permission android:name="android.permission.CAMERA" />
+	
+	<uses-permission  android:name="android.permission.READ_PHONE_STATE"/>
+	
+	<uses-feature android:name="android.hardware.camera" />
+	<uses-feature android:name="android.hardware.camera.autofocus" />
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>  
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <!-- 往SDCard写入数据权限 -->  
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name="com.ranholmes.activity.MainUIActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ranholmes.activity.BalanceActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ranholmes.activity.MakecodeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ranholmes.activity.LotteryActivity"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.ranholmes.activity.EnterIDActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ranholmes.activity.CheckPhoneActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ranholmes.activity.RecordActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ranholmes.activity.SetPasswordActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ranholmes.activity.LoginActivity2"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ranholmes.activity.DonateActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ranholmes.activity.AccountListActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ranholmes.activity.TelephoneActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ranholmes.welcome.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ranholmes.welcome.AndyViewPagerActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name="com.ranholmes.activity.LoginActivity" >
+        </activity>
+        <service 
+            android:name="com.ranholmes.server.MainServer"></service>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="com.ranholmes.activity.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+    </application>
+
+</manifest>

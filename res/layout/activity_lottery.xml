@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#242938"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/back2"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_style_back"
+                android:text="返回"
+                android:textColor="#fff"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/ListTitle_text2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:text="福利彩票刮刮乐"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_lottery_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp" >
+
+        <TextView
+            android:id="@+id/activity_lotter_txt"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:background="#f00"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="谢谢惠顾"
+            android:textSize="40dp" />
+
+        <com.ranholmes.view.EraseView
+            android:id="@+id/eraseView1"
+            android:layout_width="300dp"
+            android:layout_height="150dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/activity_lottery_submit"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/activity_lottery_area"
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_style_blue"
+        android:text="兑奖"
+        android:textColor="#fff" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="22dp"
+        android:textColor="#444"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="刮奖区" />
+
+</RelativeLayout>

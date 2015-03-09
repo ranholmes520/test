@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#242938"
+        android:focusable="true"  
+   		android:focusableInTouchMode="true"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/back"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_style_back"
+            android:text="返回"
+            android:textColor="#fff"
+            android:textSize="13sp" />
+		<TextView 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="生成我的二维码"
+		    android:textColor="#fff"
+		    android:textSize="20sp"
+		    android:gravity="center_horizontal"
+		    android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" 
+        android:layout_marginBottom="50dp"
+        android:gravity="center" >
+    <ImageView
+        android:id="@+id/fragment2_searchtype_imagebutton"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+       android:layout_centerInParent="true"
+       
+         />
+    
+</RelativeLayout>
+
+</LinearLayout>

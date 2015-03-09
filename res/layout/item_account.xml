@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:id="@+id/item_account_layout"
+    android:background="@drawable/item_episode_photo" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:focusable="false" >
+
+        <com.ranholmes.view.RoundImageView
+            android:id="@+id/item_account_gender_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher"/>
+        
+        <TextView 
+            android:id="@+id/item_account_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"/>
+        
+        <TextView 
+            android:id="@+id/item_account_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="账号"
+            android:textSize="20sp"/>
+
+	</LinearLayout>
+
+</LinearLayout>
